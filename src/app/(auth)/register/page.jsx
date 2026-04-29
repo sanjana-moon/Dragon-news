@@ -51,7 +51,7 @@ const RegisterPage = () => {
                         <input
                             type="text"
                             className="input w-full"
-                            placeholder="Type here name"
+                            placeholder="Enter your name"
                             {...register("name", {
                                 required: "Name field is required",
                             })}
@@ -66,7 +66,7 @@ const RegisterPage = () => {
                         <input
                             type="text"
                             className="input w-full"
-                            placeholder="Type here photo url"
+                            placeholder="Enter your photo url"
                             {...register("photo", {
                                 required: "Photo URL field is required",
                             })}
@@ -81,7 +81,7 @@ const RegisterPage = () => {
                         <input
                             type="email"
                             className="input w-full"
-                            placeholder="Type here email"
+                            placeholder="Enter your email"
                             {...register("email", {
                                 required: "Email field is required",
                             })}
@@ -96,7 +96,7 @@ const RegisterPage = () => {
                         <input
                             type={isShowPassword ? "text" : "password"}
                             className="input w-full"
-                            placeholder="Type here password"
+                            placeholder="Enter your password"
                             {...register("password", {
                                 required: "Password field is required",
                             })}
