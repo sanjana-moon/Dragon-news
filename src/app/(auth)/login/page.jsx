@@ -10,7 +10,7 @@ const LoginPage = () => {
         formState: { errors },
     } = useForm()
 
-    const handleLoginFunc = async(data) => {
+    const handleLoginFunc = async (data) => {
 
         const { data: res, error } = await authClient.signIn.email({
             email: data.email,
@@ -18,6 +18,14 @@ const LoginPage = () => {
             rememberMe: true,
             callbackURL: "/",
         });
+
+        if (error) {
+            alert(error.message);
+        }
+
+        if (res) {
+            alert("Signup successful");
+        }
     }
 
     return (
